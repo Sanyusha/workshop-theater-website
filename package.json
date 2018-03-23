@@ -1,7 +1,7 @@
 {
   "name": "workshop_theater_website",
   "version": "1.0.0",
-  "description": "",
+  "description": "Website for the \"Workshop Theater\"",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Sanyusha/workshop-theater-website/issues"
   },
-  "homepage": "https://github.com/Sanyusha/workshop-theater-website#readme"
+  "homepage": "https://github.com/Sanyusha/workshop-theater-website#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
 }

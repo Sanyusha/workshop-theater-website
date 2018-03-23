@@ -1,1 +1,1 @@
-#Website for the "Workshop theater"
+# Website for the "Workshop Theater"
