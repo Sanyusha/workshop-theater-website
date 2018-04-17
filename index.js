@@ -1,15 +1,8 @@
-var path = require("path");
-var express = require('express');
-var app = express();
-var http = require('http').Server(app);
+const express = require('express')
+const path = require('path')
+const PORT = process.env.PORT || 5000
 
-app.get('/', function(req, res){
-res.sendFile(__dirname + '/index.html');
-});
-
-// https://stackoverflow.com/a/13396327
-app.use(express.static('public'));
-
-http.listen(80, "0.0.0.0", function() {
-  console.log('listening on *:80');
-});
+express()
+  .use(express.static(path.join(__dirname, 'public')))
+  .get('/', (req, res) => res.sendFile(path.join(__dirname, 'index.html')))
+  .listen(PORT, () => console.log(`Listening on ${ PORT }`))
