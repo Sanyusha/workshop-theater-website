@@ -11,6 +11,10 @@ p {
     direction: rtl;
 }
 
+.w3-col {
+  float: right;
+}
+
 .bgimg {
     background-position: center;
     background-size: cover;
