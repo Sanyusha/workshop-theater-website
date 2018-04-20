@@ -1,6 +1,6 @@
 function myMap()
 {
-  myCenter=new google.maps.LatLng(41.878114, -87.629798);
+  myCenter=new google.maps.LatLng(32.0267946, 34.77374259999999);
   var mapOptions= {
     center:myCenter,
     zoom:12, scrollwheel: false, draggable: false,
@@ -12,19 +12,4 @@ function myMap()
     position: myCenter,
   });
   marker.setMap(map);
-}
-
-// Tabbed Menu
-function openMenu(evt, menuName) {
-  var i, x, tablinks;
-  x = document.getElementsByClassName("menu");
-  for (i = 0; i < x.length; i++) {
-     x[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablink");
-  for (i = 0; i < x.length; i++) {
-     tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
-  }
-  document.getElementById(menuName).style.display = "block";
-  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
 }

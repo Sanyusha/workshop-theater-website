@@ -3,6 +3,14 @@ body, html {
     font-family: "Inconsolata", sans-serif;
 }
 
+p {
+    direction: rtl;
+}
+
+.rtl {
+    direction: rtl;
+}
+
 .bgimg {
     background-position: center;
     background-size: cover;
@@ -11,5 +19,19 @@ body, html {
 }
 
 .menu {
-    display: none;
+  display: none;
+}
+
+.mySlides {
+  display:none
+}
+
+.w3-left, .w3-right, .w3-badge {
+  cursor:pointer
+}
+
+.w3-badge {
+  height:13px;
+  width:13px;
+  padding:0
 }
