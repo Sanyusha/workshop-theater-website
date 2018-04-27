@@ -19,7 +19,13 @@ p {
     background-position: center;
     background-size: cover;
     background-image: url("../img/stage.jpg");
-    min-height: 75%;
+    min-height: 30%;
+}
+
+.mainTitle {
+  color: #ffe43c;
+  font-size:90px;
+  margin-right:20px;
 }
 
 .menu {
