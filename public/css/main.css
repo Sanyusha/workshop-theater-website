@@ -22,9 +22,26 @@ p {
     min-height: 30%;
 }
 
+.img-list {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.bgHeader {
+    min-height: 10%;
+}
+
 .mainTitle {
   color: #ffe43c;
   font-size:90px;
+  margin-right:20px;
+}
+
+.secondaryTitle {
+  color: black;
+  font-size:40px;
   margin-right:20px;
 }
 
