@@ -7,7 +7,7 @@ const path = require('path');
 const actions = require('./actions');
 const logger = require('./logger');
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 80;
 const STORAGE = path.resolve("storage");
 const DOCS = path.resolve(STORAGE, "docs");
 const ABOUT = path.resolve(DOCS, "about");

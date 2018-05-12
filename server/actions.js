@@ -7,7 +7,9 @@ const STORAGE = path.resolve("storage");
 const DOCS = path.resolve(STORAGE, "docs");
 const ABOUT = path.resolve(DOCS, "about");
 
-// Stores a field that we got from request to a file on file system
+/**
+ * Stores a field that we got from request to a file on file system
+ */
 function writeFieldToFile(field, value) {
   var fField = path.resolve(ABOUT, field);
 
@@ -22,10 +24,11 @@ function writeFieldToFile(field, value) {
   });
 }
 
-// Updates about info on the server
+/**
+ * Updates about info on the server
+ */
 module.exports.updateAbout = function(req, res) {
   for (field in req.body) {
-
     if (req.body.hasOwnProperty(field)) {
       try {
         writeFieldToFile(field, req.body[field]);
